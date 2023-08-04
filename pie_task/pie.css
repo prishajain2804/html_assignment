@@ -1,0 +1,47 @@
+    
+        body{
+            background-color: white;
+            color:#404040;
+            font-size: 11pts;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin:100px;
+            padding:0px 100px;
+            background-image: url(http://www.rose-hulman.edu/class/csse/csse290-WebProgramming/images/silverware.jpg);
+            background-repeat: repeat;
+            background-attachment: fixed;
+             }
+            
+            .heading{
+                color:#a4a400;
+                background-color: #f0f0f0;
+                font-family:Arial, sans-serif, Helvetica, sans-serif;
+                text-decoration-line: underline;
+                letter-spacing: 0.25cm;
+
+            }
+            h1{
+                text-align:center;
+                font-size: 22pts bold;
+
+            }
+            h2{
+                text-align: left;
+                font-size: 18pts;
+                text-transform: uppercase;
+            }
+            a{
+                color:#a4a400;
+            }
+            .copyright{
+                font-family: monospace;
+            }
+            div{
+                background-color:#FFFFa8;
+                margin-left: 50px;
+            }
+            ul {
+            list-style-image: url(
+                http://www.rose-hulman.edu/class/csse/csse290-WebProgramming/images/pie_bullet.png);
+        }
+
+    
