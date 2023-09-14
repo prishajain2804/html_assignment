@@ -1,0 +1,29 @@
+body{
+    background-color: #cbc4c4;
+}
+.flex{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.scroll{
+    background-color: white;
+    overflow:hidden;
+    text-align: center;
+    margin-top:20%;
+    box-shadow: 3px 2px 5px 2px gray;
+    
+}
+#scroll-text{
+    transform: translateX(100%);
+    animation: myanimation 5s linear infinite;
+}
+@keyframes myanimation{
+    from{
+        transform: translateX(100%);
+
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
