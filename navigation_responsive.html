@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        .container {
+            background-color:black;
+        }
+
+        .topnav {
+            padding: 20px;
+        }
+
+        .topnav a {
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            font-size: 30px;
+
+        }
+
+        .topnav a:hover {
+            background-color: red;
+        }
+
+        @media screen and (max-width:600px) {
+            .topnav a {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<header class="container">
+    <nav class="topnav">
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+
+</html>
