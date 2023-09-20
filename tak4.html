@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .div{
+        display: inline-block;
+      }
+      .flex {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .header {
+        background-color: black;
+        height: 50px;
+      }
+      .dropdown {
+        position: relative;
+        position:inline-block;
+      }
+
+      .drop-content {
+        position: absolute;
+        display: none;
+        min-width:160px;
+        background-color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index:1;
+
+      }
+      .drop-content a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+      }
+      .direction{
+        justify-content:space-around;
+        flex-direction: column;
+      }
+
+      .dropdown:hover .drop-content {
+        display: flex;
+      }
+      nav a {
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+        padding: 10px;
+      }
+      .dropdown .drop-content a:hover{
+        background-color:#b5aeae;
+      }
+      .nav a:hover {
+        background-color: red;
+      }
+      p{
+        font-size:35px;
+        font-weight: 800;
+        margin-top:2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="flex header">
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <div class="dropdown div">
+          <a href="#">Dropdown</a>
+          <div class="drop-content direction">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div>
+        <p>Drop down menu is in navigation bar.</p>
+    </div>
+  </body>
+</html>
